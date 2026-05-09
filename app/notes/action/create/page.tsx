@@ -4,13 +4,15 @@ import css from './CreateNote.module.css';
 
 export const metadata: Metadata = {
   title: 'Create note',
-  description: 'Create a new note in NoteHub',
+  description: 'Create a new note in NoteHub.',
   openGraph: {
     title: 'Create note',
-    description: 'Create a new note in NoteHub',
-    url: '/notes/action/create',
+    description: 'Create a new note in NoteHub.',
+    url: 'https://your-vercel-domain.vercel.app/notes/action/create',
     images: [
-      'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+      {
+        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+      },
     ],
   },
 };
@@ -20,7 +22,6 @@ export default function CreateNotePage() {
     <main className={css.main}>
       <div className={css.container}>
         <h1 className={css.title}>Create note</h1>
-
         <NoteForm />
       </div>
     </main>
